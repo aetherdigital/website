@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- /Site Meta -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<title>aether digital agency</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="tinted-image">
+	
+	
+  <div class="header-wrapper" class="row">
+	<div class="header-title" class="col-12-xs">
+      <div id="logo">{ae}</div>
+      <div class="subtitle">aether <!--<span>| </span>digital agency</div>-->
+      
+      
+  </div>
+
+
+	</div>
+
+	<div class="main">
+    <div class="rectangle">
+      <div class="note">Under construction<br>come back soon!</div>
+    </div>
+
+    <div class="message">While we're rebuilding the site email us at <h1>info@aetherdigital.co.uk</h1><br>or contact us below</div>
+		
+	</div>
+
+
+	<div class="email-wrapper">
+
+	
+
+      <div id="contact" class="section">
+    <div class="container content">
+    
+                      
+        <div class="desc">
+          <h2>Contact Us</h2>
+          
+          
+        </div>
+        
+        <div id="contact-form">
+                  
+        <form action="//formspree.io/sean@aetherdigital.co.uk"
+      method="POST">
+        <form id="contact-us" action="//formspree.io/sean@aetherdigital.co.uk"
+      method="POST">
+          <div class="formblock">
+            <label class="screen-reader-text">Name</label>
+            <input type="text" name="contactName" id="contactName" value="" class="txt requiredField" placeholder="Name:" />
+                        </div>
+                      
+          <div class="formblock">
+            <label class="screen-reader-text">Email</label>
+            <input type="text" name="email" id="email" value="" class="txt requiredField email" placeholder="Email:" />
+                        </div>
+                      
+          <div class="formblock">
+            <label class="screen-reader-text">Message</label>
+             <textarea name="comments" id="commentsText" class="txtarea requiredField" placeholder="Message:"></textarea>
+                        </div>
+                      
+            <button name="submit" type="submit" class="subbutton">Send us Mail!</button>
+            <input type="hidden" name="submitted" id="submitted" value="true" />
+          </form> 
+          </form>    
+        </div>
+        
+          </div>
+    </div><!-- End #contact -->
+
+<div class="footer">
+  <div class="social-media">
+      <div id="social-icons">
+          <a href="https://twitter.com/aether_digital"><img src="icons/twitter.png" width="48" height="48" alt="twitter" /></a>
+          <a href="http://github.com/aetherdigital"><img src="icons/github.png" width="48" height="48" alt="git" /></a>
+          <a href="https://uk.linkedin.com/in/seankingprogrammer"><img src="icons/linkedin.png" width="48" height="48" alt="LinkedIn" /></a>
+          <a href="http://www.dribbble.com/aetherdigital"><img src="icons/dribbble.png" width="48" height="48" alt="dribble" /></a>
+          <a href="http://www.ello.com/aetherdigital"><img src="icons/ello.png" width="48" height="48" alt="ello" /></a>
+      </div>
+    </div>
+</div>
+  
+<script type="text/javascript">
+  <!--//--><![CDATA[//><!--
+  $(document).ready(function() {
+    $('form#contact-us').submit(function() {
+      $('form#contact-us .error').remove();
+      var hasError = false;
+      $('.requiredField').each(function() {
+        if($.trim($(this).val()) == '') {
+          var labelText = $(this).prev('label').text();
+          $(this).parent().append('<span class="error">Your forgot to enter your '+labelText+'.</span>');
+          $(this).addClass('inputError');
+          hasError = true;
+        } else if($(this).hasClass('email')) {
+          var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          if(!emailReg.test($.trim($(this).val()))) {
+            var labelText = $(this).prev('label').text();
+            $(this).parent().append('<span class="error">Sorry! You\'ve entered an invalid '+labelText+'.</span>');
+            $(this).addClass('inputError');
+            hasError = true;
+          }
+        }
+      });
+      if(!hasError) {
+        var formInput = $(this).serialize();
+        $.post($(this).attr('action'),formInput, function(data){
+          $('form#contact-us').slideUp("fast", function() {          
+            $(this).before('<p class="tick"><strong>Thanks!</strong> Your email has been delivered. Huzzah!</p>');
+          });
+        });
+      }
+      
+      return false; 
+    });
+  });
+  //-->!]]>
+</script>
+
+
+			
+		</div>
+
+
+        	
+  </div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

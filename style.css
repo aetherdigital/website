@@ -1,0 +1,278 @@
+/* Working method */
+@font-face {
+  font-family: 'Aventura';
+  src:  url('fonts/Aventura-Bold.otf') format('opentype'),
+        url('Aventura-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Besom';
+  src:  url('fonts/Besom.ttf') format('truetype'),
+        url('Besom.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaOblique';
+  src:  url('fonts/HeleveticaNeueOblique.ttf') format('truetype'),
+        url('HelveticaNeueOblique.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaCondensed';
+  src:  url('fonts/HelveticaNeueCondensed.ttf') format('truetype'),
+        url('HelveticaNeueCondensed.ttf') format('truetype');
+}
+
+
+
+body, html {
+	margin: 0;
+	padding: 0;
+    background-color: #4268e3;
+
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.tinted-image {
+    margin: 0;
+    padding: 0; 
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0.3)), url(img/glasses_laptop.jpg) no-repeat;
+	background-size: cover;
+}
+
+.header-wrapper{
+    margin:0;
+    padding: 0;
+    height:auto;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.header-title{
+    margin: 0;
+    padding: 0;
+	height:11vh;
+	width: 100vw;
+    background-color: #fff;
+    /*background-color: #ff8100;*/
+    /*background-color: #f26531;*/
+
+}
+
+#logo{
+    padding-top: -5px;
+    padding: 0;
+	margin-left: 2vh;
+    position: relative;
+    font-family: helvetica, arial;
+    font-weight: bold;
+    font-size: 8vh;
+    color: #4268e3;
+    text-align: left;
+    float:left;
+    overflow: hidden;
+}
+
+.subtitle{
+    margin:0;
+    padding: 0;
+	margin-top: 2.2vh;
+	margin-left: 2vw;
+	position: center center;
+    font-family: helvetica, arial;
+    font-size: 5vh;
+    color: #4268e3;
+    text-align: center;
+    background-color: #fff;
+    float:left;
+    overflow: hidden;
+}
+
+span{
+    color: #ccc;
+}
+
+.social-media{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    float:center;
+    background-color: #fff;
+    overflow: hidden;
+}
+.main{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    width: 100vw;
+    float: left;
+    overflow: hidden;
+}
+
+.note{
+    margin-top: 30vh;
+    text-align: center;
+    font-family: 'Besom', helvetica, arial, sans-serif;
+    font-size: 8vh;
+    color: #fff;
+}
+
+.message{
+    margin:0;
+    padding:0;
+    top: 90%;
+    text-align: center;
+    font-family: 'Besom', helvetica, arial, sans-serif;
+    font-size: 4vh;
+    color: #fff;
+    text-align: center;
+    background-color: none;
+}
+
+.message>h1{
+    text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 3vh;
+    color: #000;
+    text-align: center;
+}
+
+
+/*footer*/
+.footer{
+    height: 10vh;
+    width:100vw;
+    background-color: #fff;
+    float: left;
+}
+
+/*contact form*/
+
+#contact { 
+    width: 100vw;
+    height:500px;
+    padding-left: 50px;  
+    background: none; 
+    margin-top: 15px; 
+    float:left;
+    overflow: hidden; 
+}
+
+#contact .desc { 
+}
+#contact .desc h2 { 
+    font-family: Helvetica, Tahoma, sans-serif; 
+    font-weight: normal; 
+    letter-spacing: -0.03em; 
+    color: #444; 
+    font-size: 2.4em; 
+    margin-bottom: 8px; }
+
+#contact .desc p { 
+    font-family: Arial, Verdana, sans-serif; 
+    font-size: 1.2em; 
+    color: #333; 
+    line-height: 1.3em; 
+    margin-bottom: 15px; }
+
+#contact .formblock { 
+    display: block; 
+    margin-bottom: 11px; 
+}
+#contact .formblock label { 
+    font-size: 1em; 
+    display: block; 
+    font-style: italic; 
+    font-weight: normal; 
+    color: #000; 
+    font-family: Helvetica, arial, sans-serif; 
+    color: #333; 
+}
+
+#contact .formblock .txt { 
+    padding: 4px 6px; 
+    font-size: 1.6em; 
+    font-family: Arial, Tahoma, sans-serif; 
+    color: #666; 
+    width: 50vw; }
+#contact .formblock .txtarea { 
+    font-size: 1.5em; 
+    font-family: Arial, Tahoma, sans-serif; 
+    padding: 3px 5px; 
+    color: #666; 
+    width: 50vw; 
+    height: 13vh; 
+}
+
+#contact .formblock .error { 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    font-style: normal; 
+    font-family: Arial, Tahoma, sans-serif; 
+    color: #9d3131; 
+}
+
+#contact .info { 
+    font-weight: bold; 
+    font-size: 1.3em; 
+    color: #59913d; 
+    margin-bottom: 10px; 
+    font-family: Arial, Tahoma, sans-serif; 
+}
+
+#contact p.tick { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: italic; 
+    font-size: 1.2em; 
+    color: #3e669c; 
+}
+
+#contact .subbutton { 
+    padding: 3px 7px; 
+    font-size: 1.1em; 
+    font-family: "Besom", Arial, Tahoma, sans-serif; 
+    color: #565656; 
+    float:left;
+    padding-bottom: 10px
+}
+
+
+/*media queries*/
+
+/* Portrait and Landscape */
+
+
+/* ----------- HTC One ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
